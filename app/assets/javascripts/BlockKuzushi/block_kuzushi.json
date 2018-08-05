@@ -1,0 +1,13 @@
+{
+"companyName": "DefaultCompany",
+"productName": "block_kuzushi",
+"dataUrl": "block_kuzushi.data.unityweb",
+"asmCodeUrl": "block_kuzushi.asm.code.unityweb",
+"asmMemoryUrl": "block_kuzushi.asm.memory.unityweb",
+"asmFrameworkUrl": "block_kuzushi.asm.framework.unityweb",
+"TOTAL_MEMORY": 268435456,
+"graphicsAPI": ["WebGL 2.0", "WebGL 1.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Dark",
+"backgroundColor": "#231F20"
+}

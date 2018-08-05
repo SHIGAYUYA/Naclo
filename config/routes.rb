@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
+  get 'block_kuzushi/index'
   root to: 'game#index'
   get 'game/index'
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  get 'game/block_kuzushi'
 end
