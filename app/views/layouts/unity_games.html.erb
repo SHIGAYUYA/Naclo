@@ -1,0 +1,22 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity WebGL Player | block_kuzushi</title>
+    <link rel="shortcut icon" href="/assets/<%= @gameName -%>Data/favicon.ico">
+    <link rel="stylesheet" href="/assets/<%= @gameName -%>Data/style.css.scss">
+    <script src="/assets/<%= @gameName -%>Data/UnityProgress.js"></script>  
+    <script src="/assets/<%= @gameName -%>/UnityLoader.js"></script>
+    <script>
+      var gameInstance = UnityLoader.instantiate("gameContainer", "/assets/<%= @gameName -%>/<%= @jsonName -%>.json", {onProgress: UnityProgress});
+    </script>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+  <body>
+    <%= yield %>
+  </body>
+</html>

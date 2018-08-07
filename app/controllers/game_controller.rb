@@ -3,6 +3,14 @@ class GameController < ApplicationController
   end
 
   def block_kuzushi
-    render layout: false
+    @gameName = "BlockKuzushi"
+    @jsonName = "block_kuzushi"
+    render layout: "unity_games"
+  end
+
+  def invader
+    @gameName = "Invader"
+    @jsonName = "Invader"
+    render layout: "unity_games"
   end
 end

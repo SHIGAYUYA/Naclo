@@ -1,31 +1,12 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity WebGL Player | block_kuzushi</title>
-    <link rel="shortcut icon" href="/assets/BlockKuzushiData/favicon.ico">
-    <link rel="stylesheet" href="/assets/BlockKuzushiData/style.css.scss">
-    <script src="/assets/BlockKuzushiData/UnityProgress.js"></script>  
-    <script src="/assets/BlockKuzushi/UnityLoader.js"></script>
-    <script>
-      var gameInstance = UnityLoader.instantiate("gameContainer", "/assets/BlockKuzushi/block_kuzushi.json", {onProgress: UnityProgress});
-    </script>
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
-  <body>
-    <div class="webgl-content">
-      <div id="gameContainer" style="width: 960px; height: 600px"></div>
-      <div class="footer">
-        <div class="webgl-logo"></div>
-        <div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
-        <div class="title">block_kuzushi</div>
-      </div>
+<body>
+  <div class="webgl-content">
+    <div id="gameContainer" style="width: 960px; height: 600px"></div>
+    <div class="footer">
+      <div class="webgl-logo"></div>
+      <div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
+      <div class="title">block_kuzushi</div>
     </div>
-    <input type="button" class="btn btn-primary" value="トップに戻る" onClick="location.href='/game/index'">
-  </body>
-</html>
+  </div>
+  <input type="button" class="btn btn-primary" value="トップに戻る" onClick="location.href='/game/index'">
+</body>
